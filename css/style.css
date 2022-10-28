@@ -1,0 +1,70 @@
+@import url(resetter.css);
+@font-face {
+    font-family: 'DS-Digital';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DS-Digital'), url('https://fonts.cdnfonts.com/s/15049/DS-DIGI.woff') format('woff');
+}
+
+body{
+    background-color: #a5a5a5;
+    font-family: 'DS-Digital';
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calc{
+    background-color: #fff;
+    padding: 20px 40px;
+    color: #0000e3;
+    border-radius: 10px;
+}
+.calc h1{
+    font-weight: normal;
+    font-size: 50px;
+}
+.calc .display{
+    font-size: 45px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: #a5a5a5;
+    border-radius: 5px;
+    text-align: right;
+    color: #000;
+    border: 2px solid #0000e3;
+}
+.calc table{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+/* .calc table tr{
+
+} */
+.calc .keypad-table tr td{
+    font-size: 40px;
+    border-radius: 15px;
+    border: 2px solid #0000e3;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+}
+.calc .keypad-table tr td:active{
+    border-color: #fff;
+    color: #fff;
+    background-color: #0000e3;
+}
+.calc table tr .btn-blue{
+    border: 2px solid #0000e3;
+    background-color: #0000e3;
+    color: #fff;
+}
+.calc table tr .btn-blue:active{
+    border-color: #0000e3;
+    color: #0000e3;
+    background-color: #fff;
+}
